@@ -18,7 +18,8 @@ services:
     image: 'pedrodqt/demo:latest'
     ports:
       - '8080:8080'
-
+    depends_on:
+        - postgres
     environment:
       DB_URL: jdbc:postgresql://3.148.173.213:5432/Springboot_personal
       DB_USERNAME: devdb
