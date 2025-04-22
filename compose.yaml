@@ -8,7 +8,7 @@ services:
       - 'POSTGRES_PASSWORD=a1b2c3d4'
       - 'POSTGRES_USER=devdb'
     ports:
-      - "5432:5432"
+      - "5433:5433"
 
     networks:
       - red-backend-app
@@ -20,7 +20,7 @@ services:
       - '8080:8080'
 
     environment:
-      DB_URL: jdbc:postgresql://postgres:5432/springboot_personal
+      DB_URL: jdbc:postgresql://3.148.173.213:5432/Springboot_personal
       DB_USERNAME: devdb
       DB_PASSWORD: a1b2c3d4
       JPA_DDL: create-drop
