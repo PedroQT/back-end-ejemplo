@@ -21,8 +21,6 @@ services:
       DB_USERNAME: devdb
       DB_PASSWORD: a1b2c3d4
       JPA_DDL: create-drop
-<<<<<<< HEAD
-=======
       SERVER_PORT: 8080
       SHOW_SQL: true
       TIME_ZONE: America/Bogota
@@ -33,7 +31,6 @@ services:
       LOGGING_LEVEL_HIBERNATE_SQL: DEBUG
       LOGGING_LEVEL_HIBERNATE_BINDER: debug
       EXPOSED_ENDPOINTS: healt
->>>>>>> feature/1-despliegue
     networks:
       - red-backend-app
 
