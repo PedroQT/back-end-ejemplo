@@ -17,7 +17,7 @@ services:
     depends_on:
       - postgres
     environment:
-      DB_URL: jdbc:postgresql://localhost:5432/springboot_personal
+      DB_URL: jdbc:postgresql://postgres:5432/springboot_personal
       DB_USERNAME: devdb
       DB_PASSWORD: a1b2c3d4
       JPA_DDL: create-drop
