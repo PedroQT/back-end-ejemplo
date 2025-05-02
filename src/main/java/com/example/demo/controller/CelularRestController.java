@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@CrossOrigin(origins =  "http://localhost:4200") //-----> se permiten clientes que se conecten al localhost
+@CrossOrigin(origins =  "*") //-----> se permiten clientes que se conecten al localhost
 @RestController   // identifica esta clase como un restcontroller
 @RequestMapping("/api/v1/demo") // activa este controlador usando el end-point definido
 
