@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-
 import com.example.demo.model.entities.Celular;
 import com.example.demo.model.services.CelularServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +27,7 @@ public class CelularRestController { // declaracion de la clase rest controller
         return "Hola " + nombre; // retorna el mensaje hola con la variable nombre
     }
 
-    //---------------END-POINT GET PARA LISTAR LOS CELULARES (METODO).--------------------------------------------------------------------------
+    //---------------END-POINT GET PARA LISTAR LOS CELULARES (METODO).-------------------
 
     @GetMapping("/celulares") // mapea solicitudes http get a /celulares (end-point)
     public ResponseEntity<?> listar() { //metodo de listar
@@ -40,7 +39,7 @@ public class CelularRestController { // declaracion de la clase rest controller
         }
     }
 
-    //----------------END_POINT POST PARA GUARDAR LOS CELULARES (METODO)------------------------------------------------------------------------
+    //----------------END_POINT POST PARA GUARDAR LOS CELULARES (METODO)-----------------
 
     @PostMapping("/celulares") // mapea solicitudes http post a /celulares (end-point)
     public ResponseEntity<?> guardarCelular(@RequestBody Celular celular) { //metodo de guardar
@@ -52,7 +51,7 @@ public class CelularRestController { // declaracion de la clase rest controller
         }
     }
 
-    //----------------END-POINT GET PARA BUSCAR UN CELULAR POR EL ID (METODO)---------------------------------------------------------------------------
+    //----------------END-POINT GET PARA BUSCAR UN CELULAR POR EL ID (METODO)------------
 
     @GetMapping("/celulares/{id}") // mapea solicitudes http get a /celulares/{id} (end-point)
     public ResponseEntity<Celular> buscarCelular(@PathVariable Long id) { // metodo de buscar por id
